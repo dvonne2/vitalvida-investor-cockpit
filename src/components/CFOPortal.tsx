@@ -7,10 +7,11 @@ import { RonConwayTab } from './tabs/RonConwayTab';
 import { PeterThielTab } from './tabs/PeterThielTab';
 import { AndyBechtolsheimTab } from './tabs/AndyBechtolsheimTab';
 import { OtunbaShoyomboTab } from './tabs/OtunbaShoyomboTab';
+import { InvestorReadinessTab } from './tabs/InvestorReadinessTab';
 import { UniversalHeader } from './UniversalHeader';
 
 export const CFOPortal = () => {
-  const [selectedTab, setSelectedTab] = useState('tomi-davies');
+  const [selectedTab, setSelectedTab] = useState('investor-readiness');
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -18,12 +19,19 @@ export const CFOPortal = () => {
       
       <div className="container mx-auto px-6 py-8">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">CFO Portal - Investor Dashboard</h1>
-          <p className="text-gray-600">Comprehensive financial oversight for world-class investors</p>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">Vitalvida Investor Portal</h1>
+          <p className="text-gray-600">World-class financial oversight and investor readiness for the Men of Steel</p>
         </div>
 
         <Tabs value={selectedTab} onValueChange={setSelectedTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-5 mb-8">
+          <TabsList className="grid w-full grid-cols-6 mb-8">
+            <TabsTrigger 
+              value="investor-readiness" 
+              className="text-xs md:text-sm px-2 py-3 data-[state=active]:bg-purple-700 data-[state=active]:text-white"
+            >
+              📁 Master Checklist
+              <span className="block text-xs opacity-75">Investor Readiness</span>
+            </TabsTrigger>
             <TabsTrigger 
               value="tomi-davies" 
               className="text-xs md:text-sm px-2 py-3 data-[state=active]:bg-blue-900 data-[state=active]:text-white"
@@ -61,6 +69,10 @@ export const CFOPortal = () => {
             </TabsTrigger>
           </TabsList>
 
+          <TabsContent value="investor-readiness">
+            <InvestorReadinessTab />
+          </TabsContent>
+          
           <TabsContent value="tomi-davies">
             <TomiDaviesTab />
           </TabsContent>

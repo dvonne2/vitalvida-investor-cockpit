@@ -9,7 +9,7 @@ export const UniversalHeader = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center space-x-2">
-            <h2 className="text-xl font-bold">Vitalvida CFO Portal</h2>
+            <h2 className="text-xl font-bold">Vitalvida Investor Portal</h2>
             <Badge variant="outline" className="bg-green-50 text-green-700">Live</Badge>
           </div>
           

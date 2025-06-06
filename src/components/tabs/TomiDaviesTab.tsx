@@ -108,7 +108,7 @@ export const TomiDaviesTab = () => {
                 <Badge variant="destructive">Active</Badge>
               </div>
               <div className="flex items-center justify-between p-3 bg-yellow-50 rounded-lg">
-                <span className="text-yellow-700">DA Exposure > ₦0</span>
+                <span className="text-yellow-700">DA Exposure &gt; ₦0</span>
                 <Badge variant="outline" className="text-yellow-600">Warning</Badge>
               </div>
               <div className="flex items-center justify-between p-3 bg-green-50 rounded-lg">
