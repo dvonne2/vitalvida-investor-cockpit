@@ -18,62 +18,62 @@ export const CFOPortal = () => {
     <div className="min-h-screen bg-gray-50">
       <UniversalHeader />
       
-      <div className="container mx-auto px-6 py-8">
+      <div className="container mx-auto px-4 sm:px-6 py-8">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Vitalvida Investor Portal</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Vitalvida Investor Portal</h1>
           <p className="text-gray-600">World-class financial oversight and investor readiness for the Men of Steel</p>
         </div>
 
         <Tabs value={selectedTab} onValueChange={setSelectedTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-7 mb-8">
+          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-1 mb-8 h-auto p-1">
             <TabsTrigger 
               value="investor-readiness" 
-              className="text-xs md:text-sm px-2 py-3 data-[state=active]:bg-purple-700 data-[state=active]:text-white"
+              className="flex flex-col text-xs px-2 py-2 sm:py-3 data-[state=active]:bg-purple-700 data-[state=active]:text-white h-auto min-h-[60px] sm:min-h-[70px]"
             >
-              📁 Master Checklist
-              <span className="block text-xs opacity-75">Investor Readiness</span>
+              <span className="font-medium">📁 Master</span>
+              <span className="text-[10px] sm:text-xs opacity-75 mt-1">Readiness</span>
             </TabsTrigger>
             <TabsTrigger 
               value="tomi-davies" 
-              className="text-xs md:text-sm px-2 py-3 data-[state=active]:bg-blue-900 data-[state=active]:text-white"
+              className="flex flex-col text-xs px-2 py-2 sm:py-3 data-[state=active]:bg-blue-900 data-[state=active]:text-white h-auto min-h-[60px] sm:min-h-[70px]"
             >
-              Tomi Davies
-              <span className="block text-xs opacity-75">Governance & Control</span>
+              <span className="font-medium">Tomi Davies</span>
+              <span className="text-[10px] sm:text-xs opacity-75 mt-1">Governance</span>
             </TabsTrigger>
             <TabsTrigger 
               value="ron-conway"
-              className="text-xs md:text-sm px-2 py-3 data-[state=active]:bg-green-600 data-[state=active]:text-white"
+              className="flex flex-col text-xs px-2 py-2 sm:py-3 data-[state=active]:bg-green-600 data-[state=active]:text-white h-auto min-h-[60px] sm:min-h-[70px]"
             >
-              Ron Conway
-              <span className="block text-xs opacity-75">Scale Engine</span>
+              <span className="font-medium">Ron Conway</span>
+              <span className="text-[10px] sm:text-xs opacity-75 mt-1">Scale Engine</span>
             </TabsTrigger>
             <TabsTrigger 
               value="peter-thiel"
-              className="text-xs md:text-sm px-2 py-3 data-[state=active]:bg-slate-800 data-[state=active]:text-white"
+              className="flex flex-col text-xs px-2 py-2 sm:py-3 data-[state=active]:bg-slate-800 data-[state=active]:text-white h-auto min-h-[60px] sm:min-h-[70px]"
             >
-              Peter Thiel
-              <span className="block text-xs opacity-75">Strategic Advantage</span>
+              <span className="font-medium">Peter Thiel</span>
+              <span className="text-[10px] sm:text-xs opacity-75 mt-1">Strategy</span>
             </TabsTrigger>
             <TabsTrigger 
               value="andy-bechtolsheim"
-              className="text-xs md:text-sm px-2 py-3 data-[state=active]:bg-gray-700 data-[state=active]:text-white"
+              className="flex flex-col text-xs px-2 py-2 sm:py-3 data-[state=active]:bg-gray-700 data-[state=active]:text-white h-auto min-h-[60px] sm:min-h-[70px]"
             >
-              Andy Bechtolsheim
-              <span className="block text-xs opacity-75">Tech & Precision</span>
+              <span className="font-medium">Andy B.</span>
+              <span className="text-[10px] sm:text-xs opacity-75 mt-1">Tech & Precision</span>
             </TabsTrigger>
             <TabsTrigger 
               value="otunba-shoyombo"
-              className="text-xs md:text-sm px-2 py-3 data-[state=active]:bg-green-800 data-[state=active]:text-white"
+              className="flex flex-col text-xs px-2 py-2 sm:py-3 data-[state=active]:bg-green-800 data-[state=active]:text-white h-auto min-h-[60px] sm:min-h-[70px]"
             >
-              Otunba Shoyombo
-              <span className="block text-xs opacity-75">Owner's Dashboard</span>
+              <span className="font-medium">Otunba</span>
+              <span className="text-[10px] sm:text-xs opacity-75 mt-1">Owner Control</span>
             </TabsTrigger>
             <TabsTrigger 
               value="dangote-discipline"
-              className="text-xs md:text-sm px-2 py-3 data-[state=active]:bg-gray-800 data-[state=active]:text-white"
+              className="flex flex-col text-xs px-2 py-2 sm:py-3 data-[state=active]:bg-gray-800 data-[state=active]:text-white h-auto min-h-[60px] sm:min-h-[70px]"
             >
-              🏭 Dangote Discipline
-              <span className="block text-xs opacity-75">Cost & Efficiency Control</span>
+              <span className="font-medium">🏭 Dangote</span>
+              <span className="text-[10px] sm:text-xs opacity-75 mt-1">Cost Control</span>
             </TabsTrigger>
           </TabsList>
 
