@@ -8,6 +8,7 @@ import { PeterThielTab } from './tabs/PeterThielTab';
 import { AndyBechtolsheimTab } from './tabs/AndyBechtolsheimTab';
 import { OtunbaShoyomboTab } from './tabs/OtunbaShoyomboTab';
 import { InvestorReadinessTab } from './tabs/InvestorReadinessTab';
+import { DangoteDisciplineTab } from './tabs/DangoteDisciplineTab';
 import { UniversalHeader } from './UniversalHeader';
 
 export const CFOPortal = () => {
@@ -24,7 +25,7 @@ export const CFOPortal = () => {
         </div>
 
         <Tabs value={selectedTab} onValueChange={setSelectedTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-6 mb-8">
+          <TabsList className="grid w-full grid-cols-7 mb-8">
             <TabsTrigger 
               value="investor-readiness" 
               className="text-xs md:text-sm px-2 py-3 data-[state=active]:bg-purple-700 data-[state=active]:text-white"
@@ -67,6 +68,13 @@ export const CFOPortal = () => {
               Otunba Shoyombo
               <span className="block text-xs opacity-75">Owner's Dashboard</span>
             </TabsTrigger>
+            <TabsTrigger 
+              value="dangote-discipline"
+              className="text-xs md:text-sm px-2 py-3 data-[state=active]:bg-gray-800 data-[state=active]:text-white"
+            >
+              🏭 Dangote Discipline
+              <span className="block text-xs opacity-75">Cost & Efficiency Control</span>
+            </TabsTrigger>
           </TabsList>
 
           <TabsContent value="investor-readiness">
@@ -91,6 +99,10 @@ export const CFOPortal = () => {
           
           <TabsContent value="otunba-shoyombo">
             <OtunbaShoyomboTab />
+          </TabsContent>
+
+          <TabsContent value="dangote-discipline">
+            <DangoteDisciplineTab />
           </TabsContent>
         </Tabs>
       </div>
