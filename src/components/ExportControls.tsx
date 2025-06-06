@@ -11,7 +11,7 @@ import { useToast } from '@/hooks/use-toast';
 
 interface ExportControlsProps {
   tabName: string;
-  theme?: 'tomi' | 'ron' | 'thiel' | 'andy' | 'otunba';
+  theme?: 'tomi' | 'ron' | 'thiel' | 'andy' | 'otunba' | 'dangote';
 }
 
 export const ExportControls: React.FC<ExportControlsProps> = ({ tabName, theme = 'tomi' }) => {
@@ -26,7 +26,8 @@ export const ExportControls: React.FC<ExportControlsProps> = ({ tabName, theme =
     ron: 'bg-green-600 hover:bg-green-700',
     thiel: 'bg-slate-800 hover:bg-slate-900',
     andy: 'bg-gray-700 hover:bg-gray-800',
-    otunba: 'bg-green-800 hover:bg-green-900'
+    otunba: 'bg-green-800 hover:bg-green-900',
+    dangote: 'bg-gray-800 hover:bg-gray-900'
   };
 
   const handleExport = () => {
